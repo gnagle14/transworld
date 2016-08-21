@@ -2,7 +2,56 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 230px;
   height: 100vh;
   background-color: $goldTint;
+  z-index: 666;
+
+
+  .logo {
+    position: relative;
+    width: calc(100% - 20px);
+    height: auto;
+    // background-color: $grey2;
+    margin: 10px;
+    padding: 0px;
+
+    img {
+      width: 100%;
+
+    }
+  }
+
+  // @include MQ(L) {
+  //   width: 100%;
+  //   height: auto;
+  // }
+
+  // .logo {
+  //   position: relative;
+  //   margin: 10px;
+  //   width: calc(100% - 20px);
+  //   height: 100px;
+  //   background: {
+  //     // color: $grey;
+  //     image: url('../assets/icons/logo-1.svg');
+  //     repeat: no-repeat;
+  //     size: 100% auto;
+  //   }
+    //
+    // @include MQ(L) {
+    //   height: 40px;
+    //   width: 320px;
+    //   margin: 10px;
+    //   background: {
+    //     image: url('../assets/icons/logo.svg');
+    //     size: auto 100%;
+    //   }
+    // }
+    //
+    // @include MQ(M) {
+    //   width: 100%;
+    //   height: auto;
+    // }
+  // }
 }

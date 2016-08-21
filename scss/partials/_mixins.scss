@@ -4,7 +4,7 @@ $M: 760px;
 $MP: 820px;
 $L: 1170px;
 
-@mixin MQR($canvas) {
+@mixin MQ($canvas) {
   @if $canvas == S {
    @media only screen and (max-width: $S) { @content; }
   }

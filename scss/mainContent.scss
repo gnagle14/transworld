@@ -1,6 +1,6 @@
 main {
   position: relative;
-  left: 250px;
+  left: 230px;
   // padding: 100px 0;
   // background-color: $gold;
 
@@ -10,9 +10,14 @@ main {
     background-color: $grey;
     margin-bottom: 40px;
     &:last-of-type { margin-bottom: 0; }
-    &.one { background-color: $grey3; }
-    &.two { background-color: $grey2; }
-    &.thr { background-color: $grey1; }
-    &.for { background-color: $grey; }
+    &.one { background-color: $white3; }
+    &.two { background-color: $white2; }
+    &.thr { background-color: $white1; }
+    &.for { background-color: $white; }
   }
+
+  // @include MQ(L) {
+  //   left: 0;
+  //   margin-top: 60px;
+  // }
 }
