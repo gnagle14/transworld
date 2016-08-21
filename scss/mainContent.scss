@@ -16,8 +16,8 @@ main {
     &.for { background-color: $white; }
   }
 
-  // @include MQ(L) {
-  //   left: 0;
-  //   margin-top: 60px;
-  // }
+  @include MQ(L) {
+    left: 0;
+    margin-top: 60px;
+  }
 }
