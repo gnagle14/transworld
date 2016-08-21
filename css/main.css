@@ -463,3 +463,30 @@ img {
   content: "";
   display: table;
   clear: both; }
+
+.mainHead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #FAF9F1; }
+
+main {
+  position: relative;
+  left: 250px; }
+  main section {
+    height: 400px;
+    width: 100%;
+    background-color: #bdbdbd;
+    margin-bottom: 40px; }
+    main section:last-of-type {
+      margin-bottom: 0; }
+    main section.one {
+      background-color: #616161; }
+    main section.two {
+      background-color: #757575; }
+    main section.thr {
+      background-color: #9e9e9e; }
+    main section.for {
+      background-color: #bdbdbd; }

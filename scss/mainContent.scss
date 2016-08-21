@@ -1,0 +1,18 @@
+main {
+  position: relative;
+  left: 250px;
+  // padding: 100px 0;
+  // background-color: $gold;
+
+  section {
+    height: 400px;
+    width: 100%;
+    background-color: $grey;
+    margin-bottom: 40px;
+    &:last-of-type { margin-bottom: 0; }
+    &.one { background-color: $grey3; }
+    &.two { background-color: $grey2; }
+    &.thr { background-color: $grey1; }
+    &.for { background-color: $grey; }
+  }
+}
