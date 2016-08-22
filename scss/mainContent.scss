@@ -1,6 +1,6 @@
 main {
   position: relative;
-  left: 230px;
+  margin-left: 230px;
   // padding: 100px 0;
   // background-color: $gold;
 
@@ -16,8 +16,13 @@ main {
     &.for { background-color: $white; }
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   @include MQ(L) {
-    left: 0;
     margin-top: 60px;
+    margin-left: 0;
   }
 }
