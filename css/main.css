@@ -479,7 +479,16 @@ img {
       justify-content: flex-start;
   -ms-flex-align: stretch;
       align-items: stretch;
-  z-index: 666; }
+  z-index: 666;
+  /* Force Hardware Acceleration */
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform 333ms; }
+  .mainHead.slide-up {
+    transform: translateY(-100%);
+    transition: transform 666ms; }
+  .mainHead.no-transition {
+    transition: transform 0ms; }
   .mainHead .logo {
     width: 180px;
     height: 88px;
@@ -491,14 +500,14 @@ img {
   .mainHead .mainNav {
     width: 180px;
     margin: 10px;
-    background-color: #bdbdbd;
+    background-color: #eeeeee;
     -ms-flex-positive: 1;
         flex-grow: 1; }
   .mainHead .mainSocial {
     width: 180px;
     height: 60px;
     margin: 0px 10px 10px;
-    background-color: #616161; }
+    background-color: #bdbdbd; }
   @media only screen and (max-width: 1000px) {
     .mainHead {
       width: 100%;
