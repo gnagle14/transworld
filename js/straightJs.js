@@ -25,4 +25,6 @@ function headerResize() {
   }
 }
 
+headerResize();
+
 addEvent(window, 'resize', headerResize);
