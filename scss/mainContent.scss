@@ -1,0 +1,29 @@
+.mainContent {
+  position: relative;
+  margin-left: 200px;
+  // padding: 40px 0;
+  background-color: $grey;
+
+  section {
+    margin-bottom: 20px;
+    height: 600px;
+    background-color: $newNew;
+    &:last-of-type { margin-bottom: 0; }
+    &:nth-of-type(even) { background-color: $white; }
+    &:nth-of-type(1) {
+      height: auto;
+      padding-bottom: 200px;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include MQR(L) {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}

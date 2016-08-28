@@ -437,7 +437,7 @@ body {
   margin: 0;
   font-size: 100%;
   font-family: arial, sans-serif, Helvetica;
-  background-color: #ffffff;
+  background-color: #212121;
   letter-spacing: 0.075rem;
   word-spacing: 0.25rem;
   color: #212121; }
@@ -463,3 +463,83 @@ img {
   content: "";
   display: table;
   clear: both; }
+
+.mainHead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  z-index: 666; }
+  .mainHead .logo {
+    width: 180px;
+    height: 88px;
+    margin: 10px 10px 0;
+    background-color: #ffffff; }
+    .mainHead .logo img {
+      width: 100%;
+      height: auto; }
+  .mainHead .mainNav {
+    width: 180px;
+    margin: 10px;
+    background-color: #bdbdbd;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+  .mainHead .mainSocial {
+    width: 180px;
+    height: 60px;
+    margin: 0px 10px 10px;
+    background-color: #616161; }
+  @media only screen and (max-width: 1000px) {
+    .mainHead {
+      width: 100%;
+      height: 60px;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .mainHead .logo {
+        width: 323px;
+        height: 40px;
+        margin: 10px 0 10px 10px; }
+        .mainHead .logo img {
+          height: 40px;
+          width: auto; }
+      .mainHead .mainNav {
+        width: auto;
+        height: 40px; }
+      .mainHead .mainSocial {
+        width: 60px;
+        height: 40px;
+        margin: 10px 10px 10px 0; } }
+
+.mainContent {
+  position: relative;
+  margin-left: 200px;
+  background-color: #bdbdbd; }
+  .mainContent section {
+    margin-bottom: 20px;
+    height: 600px;
+    background-color: #FDF5E3; }
+    .mainContent section:last-of-type {
+      margin-bottom: 0; }
+    .mainContent section:nth-of-type(even) {
+      background-color: #ffffff; }
+    .mainContent section:nth-of-type(1) {
+      height: auto;
+      padding-bottom: 200px;
+      margin-bottom: 0; }
+    .mainContent section img {
+      width: 100%;
+      height: auto; }
+  @media only screen and (max-width: 1000px) {
+    .mainContent {
+      margin-left: 0;
+      margin-top: 60px; } }

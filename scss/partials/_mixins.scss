@@ -2,7 +2,7 @@
 $S: 320px;
 $M: 760px;
 $MP: 820px;
-$L: 1170px;
+$L: 1000px;
 
 @mixin MQR($canvas) {
   @if $canvas == S {
